@@ -143,6 +143,7 @@ a {
   -webkit-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .area {
   display: -webkit-box;
   display: -ms-flexbox;
