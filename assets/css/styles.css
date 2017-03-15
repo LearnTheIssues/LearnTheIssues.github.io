@@ -16,11 +16,31 @@ body {
 
 #hero {
 	margin: 0 20px;
+  padding-bottom: 50px;
 }
 
+
+
 a {
-	text-decoration: none;
-	color: #484848;
+  color: #484848;
+  border-bottom: 3px solid #ffff64;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover, a:focus {
+  color: #484848;
+  border-bottom: 3px solid #E6E64B;
+  font-weight: inherit;
+}
+
+a.resetText, a.resetText:hover,a.resetText:focus {
+  color: #484848;
+  text-decoration: none;
 }
 
 h1 {
@@ -33,9 +53,38 @@ p {
 	line-height: 20px;
 }
 
+figcaption {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #999;
+  margin: 0 0 30px 0;
+}
+
+figcaption a {
+  color: #999;
+  border-bottom: 1px solid #ddd;
+}
+
+figcaption a:hover {
+  color: #98d2c7;
+  border-color: #98d2c7;
+}
+
+.floatLeft{
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.topPadding {
+  padding-top: 50px;
+}
 
 .container {
-	max-width: 1080px;
+	max-width: 920px;
 	margin: 0 auto;
 }
 
@@ -44,9 +93,14 @@ p {
 	text-align: center;
 }
 
+.alignCenter {
+  text-align: center;
+}
+
 .subtext {
 	font-size: 24px;
 	text-align: center;
+  line-height: 28px;
 }
 
 .centerDiv {
@@ -54,12 +108,13 @@ p {
 }
 
 
+
 /*Card*/
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	width: 90%;
-	max-width: 720px;
+	max-width: 600px;
 	border-radius: 5px;
 	margin: 20px auto;
 }
@@ -112,12 +167,12 @@ img {
 }
 
 .supportButton {
-  background: #F6A623;
+  background: #ffff64;
   color: white;
   font-size: 20px;
   font-weight: 600;
   padding: 5px 40px;
-  border: 6px solid #F6A623;
+  border: 6px solid #ffff64;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
 }
@@ -136,8 +191,8 @@ img {
 
 /*Misc*/
 ::selection {
-	background: #F6A623;
-	color: #fcfbf9;
+	background: #ffff64;
+	color: #484848;
 }
 
 /* Grid */
@@ -204,8 +259,9 @@ a {
   }
 }
 .navbar-component {
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+  background-color: #ffff64;
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);*/
+
 }
 .navbar-component > .navbar {
   -webkit-box-pack: justify;
@@ -215,7 +271,7 @@ a {
 .navbar > .brand {
   display: block;
   font-size: 16px;
-  color: #777;
+  color: #484848;
   margin: 22px;
 }
 .navbar > .toggle {
@@ -334,5 +390,23 @@ a {
 .navbar > .list > .item.-link:hover,
 .navbar > .list > .item.-link:focus {
   color: #333;
-  border-bottom-color: #F6A623;
+  border-bottom-color: #ffff64;
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+    margin: 5% 0px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
