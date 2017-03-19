@@ -38,6 +38,7 @@ a:hover, a:focus {
   font-weight: inherit;
 }
 
+
 a.resetText, a.resetText:hover,a.resetText:focus {
   color: #484848;
   text-decoration: none;
@@ -274,6 +275,13 @@ a {
   color: #484848;
   margin: 22px;
 }
+.navbar > .brand {
+  display: block;
+  font-size: 16px;
+  color: #484848;
+  margin: 22px;
+}
+
 .navbar > .toggle {
   outline: none;
   border: 0;
